@@ -219,397 +219,374 @@ class _HomePageState extends State<HomePage> {
                                     )
                                   ],
                                 ),
-                                child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      CustomTextFormField(
-                                        hintText: 'Search user',
-                                        label: 'KNKN',
-                                        icon: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            IconButton(
-                                              icon: Icon(Icons.person_add),
-                                              onPressed: () {
-                                                setState(() {
-                                                  isButton3 = !isButton3;
-                                                });
-                                              },
-                                            ),
-                                            Icon(Icons.qr_code_2),
-                                          ],
+                                child: Column(children: [
+                                  CustomTextFormField(
+                                    hintText: 'Search user',
+                                    label: 'KNKN',
+                                    icon: Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        IconButton(
+                                          icon: Icon(Icons.person_add),
+                                          onPressed: () {
+                                            setState(() {
+                                              isButton3 = !isButton3;
+                                            });
+                                          },
                                         ),
-                                      ),
-                                      218.verticalSpace,
-                                      isButton3 == false
-                                          ? Image.asset('assets/Modal.png')
-                                          : Column(
-                                              children: [
-                                                Container(
-                                                  width: 688.w,
-                                                  height: 210.h,
-                                                  padding:
-                                                      const EdgeInsets.all(12),
-                                                  clipBehavior: Clip.antiAlias,
-                                                  decoration: ShapeDecoration(
-                                                    color: Colors.white,
-                                                    shape:
-                                                        RoundedRectangleBorder(
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        6)),
-                                                    shadows: [
-                                                      BoxShadow(
-                                                        color:
-                                                            Color(0x19262626),
-                                                        blurRadius: 10,
-                                                        offset: Offset(0, 0),
-                                                        spreadRadius: 0,
-                                                      )
-                                                    ],
-                                                  ),
-                                                  child: Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.min,
+                                        Icon(Icons.qr_code_2),
+                                      ],
+                                    ),
+                                  ),
+                                  isButton3 == false
+                                      ? Image.asset('assets/Modal.png')
+                                      : Column(
+                                          children: [
+                                            Container(
+                                              width: 688.w,
+                                              height: 210.h,
+                                              padding: const EdgeInsets.all(12),
+                                              clipBehavior: Clip.antiAlias,
+                                              decoration: ShapeDecoration(
+                                                color: Colors.white,
+                                                shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            6)),
+                                                shadows: [
+                                                  BoxShadow(
+                                                    color: Color(0x19262626),
+                                                    blurRadius: 10,
+                                                    offset: Offset(0, 0),
+                                                    spreadRadius: 0,
+                                                  )
+                                                ],
+                                              ),
+                                              child: Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  children: [
+                                                    Row(
                                                       children: [
-                                                        Row(
-                                                          children: [
-                                                            const Text(
-                                                              'Create account',
-                                                              style: TextStyle(
-                                                                color: Color(
-                                                                    0xFF262626),
-                                                                fontSize: 20,
-                                                                fontFamily:
-                                                                    'Golos',
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w600,
-                                                              ),
-                                                            ),
-                                                            IconButton(
-                                                                onPressed:
-                                                                    () {},
-                                                                icon: const Icon(
-                                                                    Icons
-                                                                        .keyboard_arrow_down_outlined))
-                                                          ],
+                                                        const Text(
+                                                          'Create account',
+                                                          style: TextStyle(
+                                                            color: Color(
+                                                                0xFF262626),
+                                                            fontSize: 20,
+                                                            fontFamily: 'Golos',
+                                                            fontWeight:
+                                                                FontWeight.w600,
+                                                          ),
                                                         ),
-                                                        Row(
-                                                          children: [
-                                                            const Text(
-                                                              'Enter phone/ 998998204828',
-                                                              style: TextStyle(
-                                                                color: Color(
-                                                                    0xFF7F92A0),
-                                                                fontSize: 16,
-                                                                fontFamily:
-                                                                    'Golos',
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w400,
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                        5.verticalSpace,
-                                                        Row(
-                                                          mainAxisAlignment:
-                                                              MainAxisAlignment
-                                                                  .spaceEvenly,
-                                                          children: [
-                                                            SizedBox(
-                                                              width: 336.w,
-                                                              height: 48.h,
-                                                              child:
-                                                                  TextFormField(
-                                                                decoration:
-                                                                    InputDecoration(
-                                                                  border: OutlineInputBorder(
-                                                                      borderRadius:
-                                                                          BorderRadius.circular(
-                                                                              8)),
-                                                                  enabledBorder:
-                                                                      OutlineInputBorder(
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(8)),
-                                                                  focusedBorder:
-                                                                      OutlineInputBorder(
-                                                                          borderRadius:
-                                                                              BorderRadius.circular(8)),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                            Container(
-                                                              width: 200.w,
-                                                              height: 48.h,
-                                                              decoration: BoxDecoration(
-                                                                  gradient: Style
-                                                                      .buttonGradient,
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              6)),
-                                                              child: Center(
-                                                                child: Text(
-                                                                  'Enter PVC',
-                                                                  style: TextStyle(
-                                                                      color: Style
-                                                                          .white),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                            Container(
-                                                              width: 100.w,
-                                                              height: 48.h,
-                                                              decoration: BoxDecoration(
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              6),
-                                                                  border: Border.all(
-                                                                      color: Style
-                                                                          .primaryColor)),
-                                                              child: Center(
-                                                                  child: Text(
-                                                                'Menga\nulash',
-                                                                style: TextStyle(
-                                                                    color: Style
-                                                                        .primaryColor,
-                                                                    fontSize:
-                                                                        14),
-                                                              )),
-                                                            )
-                                                          ],
-                                                        ),
-                                                        10.verticalSpace,
-                                                        Text(
-                                                          'Resent code: 54 second',
-                                                          textAlign:
-                                                              TextAlign.center,
+                                                        IconButton(
+                                                            onPressed: () {},
+                                                            icon: const Icon(Icons
+                                                                .keyboard_arrow_down_outlined))
+                                                      ],
+                                                    ),
+                                                    Row(
+                                                      children: [
+                                                        const Text(
+                                                          'Enter phone/ 998998204828',
                                                           style: TextStyle(
                                                             color: Color(
                                                                 0xFF7F92A0),
-                                                            fontSize: 20,
+                                                            fontSize: 16,
                                                             fontFamily: 'Golos',
                                                             fontWeight:
                                                                 FontWeight.w400,
                                                           ),
-                                                        )
-                                                      ]),
-                                                ),
-                                                Padding(
-                                                  padding:
-                                                      const EdgeInsets.all(24),
-                                                  child: Container(
-                                                    width: 100,
-                                                    height: 100,
-                                                    decoration: ShapeDecoration(
-                                                      color: Colors.white,
-                                                      shape: OvalBorder(
-                                                        side: BorderSide(
-                                                            width: 0.50,
-                                                            color: Color(
-                                                                0xFF7F92A0)),
-                                                      ),
+                                                        ),
+                                                      ],
                                                     ),
-                                                    child: Center(
-                                                      child: Icon(
-                                                          Icons.camera_alt),
+                                                    5.verticalSpace,
+                                                    Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceEvenly,
+                                                      children: [
+                                                        SizedBox(
+                                                          width: 336.w,
+                                                          height: 48.h,
+                                                          child: TextFormField(
+                                                            decoration:
+                                                                InputDecoration(
+                                                              border: OutlineInputBorder(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8)),
+                                                              enabledBorder: OutlineInputBorder(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8)),
+                                                              focusedBorder: OutlineInputBorder(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8)),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Container(
+                                                          width: 200.w,
+                                                          height: 48.h,
+                                                          decoration: BoxDecoration(
+                                                              gradient: Style
+                                                                  .buttonGradient,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6)),
+                                                          child: Center(
+                                                            child: Text(
+                                                              'Enter PVC',
+                                                              style: TextStyle(
+                                                                  color: Style
+                                                                      .white),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                        Container(
+                                                          width: 100.w,
+                                                          height: 48.h,
+                                                          decoration: BoxDecoration(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          6),
+                                                              border: Border.all(
+                                                                  color: Style
+                                                                      .primaryColor)),
+                                                          child: Center(
+                                                              child: Text(
+                                                            'Menga\nulash',
+                                                            style: TextStyle(
+                                                                color: Style
+                                                                    .primaryColor,
+                                                                fontSize: 14),
+                                                          )),
+                                                        )
+                                                      ],
+                                                    ),
+                                                    10.verticalSpace,
+                                                    Text(
+                                                      'Resent code: 54 second',
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                        color:
+                                                            Color(0xFF7F92A0),
+                                                        fontSize: 20,
+                                                        fontFamily: 'Golos',
+                                                        fontWeight:
+                                                            FontWeight.w400,
+                                                      ),
+                                                    )
+                                                  ]),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.all(24),
+                                              child: Container(
+                                                width: 100,
+                                                height: 100,
+                                                decoration: ShapeDecoration(
+                                                  color: Colors.white,
+                                                  shape: OvalBorder(
+                                                    side: BorderSide(
+                                                        width: 0.50,
+                                                        color:
+                                                            Color(0xFF7F92A0)),
+                                                  ),
+                                                ),
+                                                child: Center(
+                                                  child: Icon(Icons.camera_alt),
+                                                ),
+                                              ),
+                                            ),
+                                            Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.spaceEvenly,
+                                              children: [
+                                                SizedBox(
+                                                  width: 292.w,
+                                                  height: 56.h,
+                                                  child: TextFormField(
+                                                    decoration: InputDecoration(
+                                                      hintText: 'Name',
+                                                      border:
+                                                          OutlineInputBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8)),
+                                                      enabledBorder:
+                                                          OutlineInputBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8)),
+                                                      focusedBorder:
+                                                          OutlineInputBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8)),
                                                     ),
                                                   ),
                                                 ),
-                                                Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment
-                                                          .spaceEvenly,
-                                                  children: [
-                                                    SizedBox(
-                                                      width: 292.w,
-                                                      height: 56.h,
-                                                      child: TextFormField(
-                                                        decoration:
-                                                            InputDecoration(
-                                                          hintText: 'Name',
-                                                          border: OutlineInputBorder(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          8)),
-                                                          enabledBorder:
-                                                              OutlineInputBorder(
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              8)),
-                                                          focusedBorder:
-                                                              OutlineInputBorder(
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              8)),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                    SizedBox(
-                                                      width: 292.w,
-                                                      height: 56.h,
-                                                      child: TextFormField(
-                                                        decoration:
-                                                            InputDecoration(
-                                                          hintText: 'Surname',
-                                                          border: OutlineInputBorder(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          8)),
-                                                          enabledBorder:
-                                                              OutlineInputBorder(
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              8)),
-                                                          focusedBorder:
-                                                              OutlineInputBorder(
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              8)),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                                24.verticalSpace,
-                                                Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment
-                                                          .spaceEvenly,
-                                                  children: [
-                                                    SizedBox(
-                                                      width: 292.w,
-                                                      height: 56.h,
-                                                      child: TextFormField(
-                                                        keyboardType:
-                                                            TextInputType
-                                                                .number,
-                                                        decoration:
-                                                            InputDecoration(
-                                                          hintText: 'Age',
-                                                          border: OutlineInputBorder(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          8)),
-                                                          enabledBorder:
-                                                              OutlineInputBorder(
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              8)),
-                                                          focusedBorder:
-                                                              OutlineInputBorder(
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              8)),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                    Container(
-                                                      width: 292.w,
-                                                      height: 56.h,
-                                                      decoration: BoxDecoration(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(8),
-                                                          border: Border.all(
-                                                              color:
-                                                                  Style.black)),
-                                                      child: DropdownButton<
-                                                          String>(
-                                                        value: dropdownValue,
-                                                        onChanged:
-                                                            (String? newValue) {
-                                                          setState(() {
-                                                            dropdownValue =
-                                                                newValue!;
-                                                          });
-                                                        },
-                                                        items: <String>[
-                                                          'Male',
-                                                          'Famale',
-                                                          'Bus',
-                                                          'Flight'
-                                                        ].map<
-                                                            DropdownMenuItem<
-                                                                String>>((String
-                                                            value) {
-                                                          return DropdownMenuItem<
-                                                              String>(
-                                                            value: value,
-                                                            child: Text(
-                                                              value,
-                                                            ),
-                                                          );
-                                                        }).toList(),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                                24.verticalSpace,
-                                                Container(
-                                                  width: 615.w,
+                                                SizedBox(
+                                                  width: 292.w,
                                                   height: 56.h,
-                                                  decoration: ShapeDecoration(
-                                                    color: Colors.white,
-                                                    shape:
-                                                        RoundedRectangleBorder(
-                                                      side: BorderSide(
-                                                          width: 1,
-                                                          color: Style.black),
+                                                  child: TextFormField(
+                                                    decoration: InputDecoration(
+                                                      hintText: 'Surname',
+                                                      border:
+                                                          OutlineInputBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8)),
+                                                      enabledBorder:
+                                                          OutlineInputBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8)),
+                                                      focusedBorder:
+                                                          OutlineInputBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8)),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                            24.verticalSpace,
+                                            Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.spaceEvenly,
+                                              children: [
+                                                SizedBox(
+                                                  width: 292.w,
+                                                  height: 56.h,
+                                                  child: TextFormField(
+                                                    keyboardType:
+                                                        TextInputType.number,
+                                                    decoration: InputDecoration(
+                                                      hintText: 'Age',
+                                                      border:
+                                                          OutlineInputBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8)),
+                                                      enabledBorder:
+                                                          OutlineInputBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8)),
+                                                      focusedBorder:
+                                                          OutlineInputBorder(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8)),
+                                                    ),
+                                                  ),
+                                                ),
+                                                Container(
+                                                  width: 292.w,
+                                                  height: 56.h,
+                                                  decoration: BoxDecoration(
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               8),
-                                                    ),
+                                                      border: Border.all(
+                                                          color: Style.black)),
+                                                  child: DropdownButton<String>(
+                                                    value: dropdownValue,
+                                                    onChanged:
+                                                        (String? newValue) {
+                                                      setState(() {
+                                                        dropdownValue =
+                                                            newValue!;
+                                                      });
+                                                    },
+                                                    items: <String>[
+                                                      'Male',
+                                                      'Famale',
+                                                      'Bus',
+                                                      'Flight'
+                                                    ].map<
+                                                            DropdownMenuItem<
+                                                                String>>(
+                                                        (String value) {
+                                                      return DropdownMenuItem<
+                                                          String>(
+                                                        value: value,
+                                                        child: Text(
+                                                          value,
+                                                        ),
+                                                      );
+                                                    }).toList(),
                                                   ),
-                                                  child: CountryListPick(
-                                                      appBar: AppBar(
-                                                        backgroundColor:
-                                                            Colors.blue,
-                                                        title: Text(
-                                                            'Choisir un pays'),
-                                                      ),
-                                                      onChanged: (value) {
-                                                        setState(() {
-                                                          value;
-                                                        });
-                                                      },
-
-                                                      // To disable option set to false
-                                                      theme: CountryTheme(
-                                                        isShowFlag: true,
-                                                        isShowTitle: true,
-                                                        isShowCode: true,
-                                                        isDownIcon: true,
-                                                        showEnglishName: true,
-                                                      ),
-                                                      // Set default value
-
-                                                      // or
-                                                      // initialSelection: 'US'
-
-                                                      // Whether to allow the widget to set a custom UI overlay
-                                                      useUiOverlay: true,
-                                                      // Whether the country list should be wrapped in a SafeArea
-                                                      useSafeArea: false),
                                                 ),
                                               ],
-                                            )
-                                    ]),
+                                            ),
+                                            24.verticalSpace,
+                                            Container(
+                                              width: 615.w,
+                                              height: 56.h,
+                                              decoration: ShapeDecoration(
+                                                color: Colors.white,
+                                                shape: RoundedRectangleBorder(
+                                                  side: BorderSide(
+                                                      width: 1,
+                                                      color: Style.black),
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                ),
+                                              ),
+                                              child: CountryListPick(
+                                                  appBar: AppBar(
+                                                    backgroundColor:
+                                                        Colors.blue,
+                                                    title:
+                                                        Text('Choisir un pays'),
+                                                  ),
+                                                  onChanged: (value) {
+                                                    setState(() {
+                                                      value;
+                                                    });
+                                                  },
+
+                                                  // To disable option set to false
+                                                  theme: CountryTheme(
+                                                    isShowFlag: true,
+                                                    isShowTitle: true,
+                                                    isShowCode: true,
+                                                    isDownIcon: true,
+                                                    showEnglishName: true,
+                                                  ),
+                                                  // Set default value
+
+                                                  // or
+                                                  // initialSelection: 'US'
+
+                                                  // Whether to allow the widget to set a custom UI overlay
+                                                  useUiOverlay: true,
+                                                  // Whether the country list should be wrapped in a SafeArea
+                                                  useSafeArea: false),
+                                            ),
+                                          ],
+                                        )
+                                ]),
                               ),
                             ),
                           ],
