@@ -34,10 +34,11 @@ abstract class Style {
   }
 
   static normal({int size = 16, Color color = textColor}) {
-    return GoogleFonts.inter(
-      fontSize: size.sp,
-      color: color,
-      fontWeight: FontWeight.normal,
+    return const TextStyle(
+      color: Color(0xFF7F92A0),
+      fontSize: 12,
+      fontFamily: 'Golos',
+      fontWeight: FontWeight.w400,
     );
   }
 

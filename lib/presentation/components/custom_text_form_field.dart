@@ -25,13 +25,15 @@ class CustomTextFormField extends StatelessWidget {
       controller: controller,
       decoration: InputDecoration(
           labelText: label,
-          labelStyle: TextStyle(color: Colors.black),
+          labelStyle: const TextStyle(color: Colors.black),
           hintText: hintText,
           suffixIcon: icon,
-          hintStyle: TextStyle(color: Style.black),
-          border: const OutlineInputBorder(),
-          focusedBorder: const OutlineInputBorder(),
-          enabledBorder: const OutlineInputBorder(),
+          hintStyle: const TextStyle(color: Style.black),
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
+          focusedBorder:
+              OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
+          enabledBorder:
+              OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
           errorBorder: OutlineInputBorder(
               borderSide:
                   BorderSide(color: Theme.of(context).colorScheme.error))),
