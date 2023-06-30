@@ -200,7 +200,7 @@ class _BigContainerState extends State<BigContainer> {
                                         children: [
                                           SizedBox(
                                             width: 336.w,
-                                            height: 48.h,
+                                            height: 70.h,
                                             child: CustomTextFormField(
                                               controller: pvc,
                                               hintText:
@@ -338,7 +338,7 @@ class _BigContainerState extends State<BigContainer> {
                         children: [
                           SizedBox(
                             width: 292.w,
-                            height: 56.h,
+                            height: 70.h,
                             child: CustomTextFormField(
                               controller: name,
                               hintText: 'Name*',
@@ -353,7 +353,7 @@ class _BigContainerState extends State<BigContainer> {
                           16.horizontalSpace,
                           SizedBox(
                             width: 292.w,
-                            height: 56.h,
+                            height: 70.h,
                             child: CustomTextFormField(
                               controller: surname,
                               hintText: 'Surname*',
@@ -373,7 +373,7 @@ class _BigContainerState extends State<BigContainer> {
                         children: [
                           SizedBox(
                             width: 292.w,
-                            height: 56.h,
+                            height: 70.h,
                             child: CustomTextFormField(
                               controller: age,
                               hintText: 'Age*',
@@ -392,7 +392,7 @@ class _BigContainerState extends State<BigContainer> {
                       24.verticalSpace,
                       SizedBox(
                         width: 600.w,
-                        height: 56.h,
+                        height: 70.h,
                         child: CustomTextFormField(
                           controller: region,
                           hintText: 'Region',
@@ -407,7 +407,7 @@ class _BigContainerState extends State<BigContainer> {
                       24.verticalSpace,
                       SizedBox(
                         width: 600.w,
-                        height: 56.h,
+                        height: 70.h,
                         child: CustomTextFormField(
                           controller: profession,
                           hintText: 'Profession',
@@ -422,7 +422,7 @@ class _BigContainerState extends State<BigContainer> {
                       24.verticalSpace,
                       SizedBox(
                         width: 600.w,
-                        height: 56.h,
+                        height: 70.h,
                         child: CustomTextFormField(
                           controller: cupon,
                           hintText: 'Cupon',
