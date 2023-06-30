@@ -49,7 +49,7 @@ class GridviewBuilder extends StatelessWidget {
                       child: Text(
                         'Отирелакс 17.1 литр',
                         maxLines: 1,
-                        overflow: TextOverflow.clip,
+                        overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                           color: Color(0xFF262626),
                           fontSize: 18,
@@ -62,9 +62,9 @@ class GridviewBuilder extends StatelessWidget {
                       child: Row(
                         children: [
                           Text(
-                            '275 000 UZS',
                             maxLines: 1,
-                            overflow: TextOverflow.clip,
+                            overflow: TextOverflow.ellipsis,
+                            '275 000 UZS',
                             style: TextStyle(
                               color: Color(0xFF262626),
                               fontSize: 16,
@@ -80,25 +80,25 @@ class GridviewBuilder extends StatelessWidget {
                     Expanded(
                       child: Text('В наличии: 34',
                           maxLines: 1,
-                          overflow: TextOverflow.clip,
+                          overflow: TextOverflow.ellipsis,
                           style: Style.normal()),
                     ),
                     Expanded(
                       child: Text('Срок: 21.12.2022',
                           maxLines: 1,
-                          overflow: TextOverflow.clip,
+                          overflow: TextOverflow.ellipsis,
                           style: Style.normal()),
                     ),
                     Expanded(
                       child: Text('Производитель: Habiba Aerodinamika',
                           maxLines: 1,
-                          overflow: TextOverflow.clip,
+                          overflow: TextOverflow.ellipsis,
                           style: Style.normal()),
                     ),
                     Expanded(
                       child: Text.rich(
                         maxLines: 1,
-                        overflow: TextOverflow.clip,
+                        overflow: TextOverflow.ellipsis,
                         TextSpan(
                           children: [
                             TextSpan(text: 'Место: ', style: Style.normal()),

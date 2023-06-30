@@ -70,7 +70,7 @@ class _BigContainerState extends State<BigContainer> {
       result = await FilePicker.platform.pickFiles(
           allowMultiple: true,
           dialogTitle: 'Select a File for our App',
-          type: FileType.any,
+          type: FileType.custom,
           allowedExtensions: ['jpg', 'jpeg', 'gif', 'png']);
 
       if (result != null) {

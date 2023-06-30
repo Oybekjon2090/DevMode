@@ -25,21 +25,14 @@ class _SideBarState extends State<SideBar> {
     ),
   ];
 
-  /// The currently selected index of the bar
+ 
   int selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /// You can use an AppBar if you want to
-      //appBar: AppBar(
-      //  title: const Text('App'),
-      //),
-
-      // The row is needed to display the current view
       body: Row(
         children: [
-          /// Pretty similar to the BottomNavigationBar!
           SideNavigationBar(
             expandable: false,
             initiallyExpanded: false,
@@ -49,8 +42,7 @@ class _SideBarState extends State<SideBar> {
                 togglerTheme: const SideNavigationBarTogglerTheme(),
                 dividerTheme: SideNavigationBarDividerTheme.standard()),
             selectedIndex: selectedIndex,
-            items:  const [
-              
+            items: const [
               SideNavigationBarItem(
                 icon: Icons.dashboard,
                 label: 'Dashboard',
@@ -70,8 +62,6 @@ class _SideBarState extends State<SideBar> {
               });
             },
           ),
-
-          /// Make it take the rest of the available width
           Expanded(
             child: views.elementAt(selectedIndex),
           )

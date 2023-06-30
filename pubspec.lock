@@ -9,22 +9,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
-  auto_size_text:
-    dependency: transitive
-    description:
-      name: auto_size_text
-      sha256: "3f5261cd3fb5f2a9ab4e2fc3fba84fd9fcaac8821f20a1d4e71f557521b22599"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.0"
-  badges:
-    dependency: transitive
-    description:
-      name: badges
-      sha256: "6e7f3ec561ec08f47f912cfe349d4a1707afdc8dda271e17b046aa6d42c89e77"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.1.1"
   boolean_selector:
     dependency: transitive
     description:
@@ -57,14 +41,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.1"
-  country_list_pick:
-    dependency: "direct main"
-    description:
-      name: country_list_pick
-      sha256: "379da3b8d194d4bd5a07472128c3ce5b4d205a0a15e217236aed1c393959a8b6"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.1+6"
   crypto:
     dependency: transitive
     description:
@@ -118,14 +94,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_animate:
-    dependency: transitive
-    description:
-      name: flutter_animate
-      sha256: be54662837a6e66cc53ee88549e808c625275e0faf5a43e11cf3182cb0bd1b02
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.2.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -150,14 +118,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.8.4"
-  flutter_side_menu:
-    dependency: "direct main"
-    description:
-      name: flutter_side_menu
-      sha256: "317efbecf7a7dc12e379950eebebf07fe81c48a0a9d2cbfa73d9b1de3828480d"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.3.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -176,14 +136,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.1.0"
-  helpers:
-    dependency: transitive
-    description:
-      name: helpers
-      sha256: d82a48e5acd45e3650af20779cf61326dd9c1aaf729fdab4ae721dc48f28b840
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.2.3"
   http:
     dependency: transitive
     description:
@@ -240,14 +192,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
-  nested:
-    dependency: transitive
-    description:
-      name: nested
-      sha256: "03bac4c528c64c95c722ec99280375a6f2fc708eec17c7b3f07253b626cd2a20"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
   path:
     dependency: transitive
     description:
@@ -328,30 +272,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.4"
-  proste_indexed_stack:
-    dependency: "direct main"
-    description:
-      name: proste_indexed_stack
-      sha256: "12ea6665d12be110afe0ee13232b5f612ff76c6c465296cc53cba3790548bcf8"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.4"
-  provider:
-    dependency: "direct main"
-    description:
-      name: provider
-      sha256: cdbe7530b12ecd9eb455bdaa2fcb8d4dad22e80b8afb4798b41479d5ce26847f
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.0.5"
-  scroll_navigation:
-    dependency: "direct main"
-    description:
-      name: scroll_navigation
-      sha256: e252abf1a29c801154df2cee44d62a8fb70c3ca6b1da962c555bf445a6b50e7a
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.3.2"
   side_navigation:
     dependency: "direct main"
     description:
@@ -360,22 +280,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.4"
-  sidebarx:
-    dependency: "direct main"
-    description:
-      name: sidebarx
-      sha256: "871bc09510a6e37e0bb554186f3a2f0082d0aa7ad01c93f93448a025416f6e31"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.16.0"
-  simple_sidebar:
-    dependency: "direct main"
-    description:
-      name: simple_sidebar
-      sha256: db68eebeda4bf976029d51ad8f76a6e5c60864efc022366759c3d7e54aeee72e
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.8"
   sky_engine:
     dependency: transitive
     description: flutter

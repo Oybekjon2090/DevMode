@@ -24,6 +24,7 @@ class CustomTextFormField extends StatelessWidget {
       validator: validator,
       controller: controller,
       decoration: InputDecoration(
+          contentPadding: EdgeInsets.zero,
           filled: true,
           labelText: label,
           labelStyle: const TextStyle(color: Colors.black),
