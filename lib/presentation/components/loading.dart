@@ -1,7 +1,6 @@
 import 'dart:io' show Platform;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../style/style.dart';
 
 class Loading extends StatelessWidget {
