@@ -105,11 +105,27 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.4"
+  file_picker:
+    dependency: "direct main"
+    description:
+      name: file_picker
+      sha256: b1729fc96627dd44012d0a901558177418818d6bd428df59dcfeb594e5f66432
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.3.2"
   flutter:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_animate:
+    dependency: transitive
+    description:
+      name: flutter_animate
+      sha256: be54662837a6e66cc53ee88549e808c625275e0faf5a43e11cf3182cb0bd1b02
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.2.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -118,6 +134,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
+  flutter_plugin_android_lifecycle:
+    dependency: transitive
+    description:
+      name: flutter_plugin_android_lifecycle
+      sha256: "950e77c2bbe1692bc0874fc7fb491b96a4dc340457f4ea1641443d0a6c1ea360"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.15"
   flutter_screenutil:
     dependency: "direct main"
     description:
@@ -136,6 +160,11 @@ packages:
     version: "0.3.2"
   flutter_test:
     dependency: "direct dev"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
@@ -331,6 +360,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.4"
+  sidebarx:
+    dependency: "direct main"
+    description:
+      name: sidebarx
+      sha256: "871bc09510a6e37e0bb554186f3a2f0082d0aa7ad01c93f93448a025416f6e31"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.16.0"
+  simple_sidebar:
+    dependency: "direct main"
+    description:
+      name: simple_sidebar
+      sha256: db68eebeda4bf976029d51ad8f76a6e5c60864efc022366759c3d7e54aeee72e
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.8"
   sky_engine:
     dependency: transitive
     description: flutter

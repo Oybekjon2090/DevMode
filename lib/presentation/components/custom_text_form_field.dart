@@ -24,6 +24,8 @@ class CustomTextFormField extends StatelessWidget {
       validator: validator,
       controller: controller,
       decoration: InputDecoration(
+          filled: true,
+          enabled: true,
           labelText: label,
           labelStyle: const TextStyle(color: Colors.black),
           hintText: hintText,
@@ -34,7 +36,10 @@ class CustomTextFormField extends StatelessWidget {
               OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
           enabledBorder:
               OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
+          disabledBorder:
+              OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
           errorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(8),
               borderSide:
                   BorderSide(color: Theme.of(context).colorScheme.error))),
     );

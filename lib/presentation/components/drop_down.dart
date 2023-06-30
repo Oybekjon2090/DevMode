@@ -11,10 +11,9 @@ class DropDown extends StatefulWidget {
 }
 
 class _DropDownState extends State<DropDown> {
-   String? dropdownValue;
+  String? dropdownValue;
   @override
   Widget build(BuildContext context) {
-    
     return Container(
       width: 292.w,
       height: 56.h,
@@ -22,14 +21,19 @@ class _DropDownState extends State<DropDown> {
           borderRadius: BorderRadius.circular(8),
           border: Border.all(color: Style.black)),
       child: DropdownButton<String>(
+        underline: const SizedBox.shrink(),
+        isExpanded: true,
+        hint: const Text('Gender*'),
         value: dropdownValue,
         onChanged: (String? newValue) {
           setState(() {
             dropdownValue = newValue!;
           });
         },
-        items: <String>['Male', 'Famale', 'Bus', 'Flight']
-            .map<DropdownMenuItem<String>>((String value) {
+        items: <String>[
+          'Male',
+          'Famale',
+        ].map<DropdownMenuItem<String>>((String value) {
           return DropdownMenuItem<String>(
             value: value,
             child: Text(

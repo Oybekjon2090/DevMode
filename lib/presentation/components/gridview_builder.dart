@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:work/presentation/style/style.dart';
 
 import 'animation_button_effect.dart';
 
@@ -12,8 +13,6 @@ class GridviewBuilder extends StatelessWidget {
         shrinkWrap: true,
         itemCount: 20,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisSpacing: 20,
-          mainAxisExtent: 300,
           crossAxisCount: 4,
         ),
         itemBuilder: (context, index) {
@@ -22,101 +21,96 @@ class GridviewBuilder extends StatelessWidget {
               margin: const EdgeInsets.all(10),
               width: 400.w,
               height: 348.h,
-              decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(24)),
-                boxShadow: [
-                  BoxShadow(
-                      blurRadius: 50,
-                      offset: const Offset(0, 6),
-                      color: const Color(0xff5A6CEA).withOpacity(0.08))
-                ],
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(24)),
                 color: Colors.white,
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: 182.h,
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage(
-                              'assets/food.png',
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: Container(
+                        width: 376.w,
+                        height: 182.h,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            image: const DecorationImage(
+                                image: AssetImage(
+                                  'assets/food.png',
+                                ),
+                                fit: BoxFit.cover)),
+                      ),
+                    ),
+                    const Expanded(
+                      child: Text(
+                        'Отирелакс 17.1 литр',
+                        maxLines: 1,
+                        overflow: TextOverflow.clip,
+                        style: TextStyle(
+                          color: Color(0xFF262626),
+                          fontSize: 18,
+                          fontFamily: 'Golos',
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                    const Expanded(
+                      child: Row(
+                        children: [
+                          Text(
+                            '275 000 UZS',
+                            maxLines: 1,
+                            overflow: TextOverflow.clip,
+                            style: TextStyle(
+                              color: Color(0xFF262626),
+                              fontSize: 16,
+                              fontFamily: 'Golos',
+                              fontWeight: FontWeight.w600,
                             ),
-                            fit: BoxFit.cover)),
-                  ),
-                  const Text(
-                    'Отирелакс 17.1 литр',
-                    style: TextStyle(
-                      color: Color(0xFF262626),
-                      fontSize: 18,
-                      fontFamily: 'Golos',
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  const Text(
-                    '275 000 UZS',
-                    style: TextStyle(
-                      color: Color(0xFF262626),
-                      fontSize: 16,
-                      fontFamily: 'Golos',
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  const Text(
-                    'В наличии: 34',
-                    style: TextStyle(
-                      color: Color(0xFF7F92A0),
-                      fontSize: 12,
-                      fontFamily: 'Golos',
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  const Text(
-                    'Срок: 21.12.2022',
-                    style: TextStyle(
-                      color: Color(0xFF7F92A0),
-                      fontSize: 12,
-                      fontFamily: 'Golos',
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  const Text(
-                    'Производитель: Habiba Aerodinamika',
-                    style: TextStyle(
-                      color: Color(0xFF7F92A0),
-                      fontSize: 12,
-                      fontFamily: 'Golos',
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  const Text.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(
-                          text: 'Место: ',
-                          style: TextStyle(
-                            color: Color(0xFF7F92A0),
-                            fontSize: 12,
-                            fontFamily: 'Golos',
-                            fontWeight: FontWeight.w400,
                           ),
-                        ),
-                        TextSpan(
-                          text: 'Полка слева 2 отдел ушные медикаменты',
-                          style: TextStyle(
-                            color: Color(0xFF7F92A0),
-                            fontSize: 12,
-                            fontFamily: 'Golos',
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                      ],
+                          Spacer(),
+                          Icon(Icons.shopping_cart)
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                    Expanded(
+                      child: Text('В наличии: 34',
+                          maxLines: 1,
+                          overflow: TextOverflow.clip,
+                          style: Style.normal()),
+                    ),
+                    Expanded(
+                      child: Text('Срок: 21.12.2022',
+                          maxLines: 1,
+                          overflow: TextOverflow.clip,
+                          style: Style.normal()),
+                    ),
+                    Expanded(
+                      child: Text('Производитель: Habiba Aerodinamika',
+                          maxLines: 1,
+                          overflow: TextOverflow.clip,
+                          style: Style.normal()),
+                    ),
+                    Expanded(
+                      child: Text.rich(
+                        maxLines: 1,
+                        overflow: TextOverflow.clip,
+                        TextSpan(
+                          children: [
+                            TextSpan(text: 'Место: ', style: Style.normal()),
+                            TextSpan(
+                                text: 'Полка слева 2 отдел ушные медикаменты',
+                                style: Style.normal()),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           );
